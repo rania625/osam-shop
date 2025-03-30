@@ -1,0 +1,234 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>OSAM Shop </title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon/OIG4.jpeg">
+
+    <!-- CSS
+	============================================ -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/font.awesome.min.css">
+    <!-- Linear Icons CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/linearicons.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
+    <!-- Jquery ui CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+ 
+<?php include('header.php'); ?>
+
+   
+    <!-- Breadcrumb Area Start Here -->
+    <div class="breadcrumbs-area position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="breadcrumb-content position-relative section-content">
+                        <h3 class="title-3">Product Details</h3>
+                        <ul>
+                            <li><a href="index.php">Home</a></li>
+                                <li>Roses and teddy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumb Area End Here -->
+        <!-- Shop Main Area Start Here -->
+        <div class="shop-main-area">
+            <div class="container container-default custom-area">
+                <div class="row flex-row-reverse">
+                    <div class="col-12 col-custom widget-mt">
+                        <!--shop toolbar start-->
+                        <div class="shop_toolbar_wrapper mb-30">
+                            <div class="shop_toolbar_btn">
+                                <button data-role="grid_4" type="button" class="active btn-grid-4" title="Grid-4"><i class="fa fa-th"></i></button>
+                             
+                                <button data-role="grid_list" type="button" class="btn-list" title="List"><i class="fa fa-th-list"></i></button>
+                            </div>
+                            <div class="shop-select">
+                                <form class="d-flex flex-column w-100" action="#">
+                                   
+                                </form>
+                            </div>
+                        </div>
+                        <!--shop toolbar end-->
+                        <!-- Shop Wrapper Start -->
+                        <div class="row shop_wrapper grid_4">
+                            <div class="col-lg-3 col-md-6 col-sm-6  col-custom product-area">
+                                <div class="product-item">
+                                    <div class="single-product position-relative mr-0 ml-0">
+                                        <div class="product-image">
+                                            <a class="d-block" href="product-details-Teddy Rosewood.html">
+                                                <img src="assets/images/product/osam3 - Copie.jpg" alt="" class="product-image-1 w-100">
+                                                <img src="assets/images/product/TEDDY.jpeg" alt="" class="product-image-2 position-absolute w-100">
+                                            </a>
+                                           
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="product-title">
+                                                <h4 class="title-2"> <a href="product-details-Teddy Rosewood.html">Teddy's Rose Garden</a></h4>
+                                            </div>
+                                            <div class="product-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <div class="price-box">
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="product-content-listview">
+                                            <div class="product-title">
+                                                <h4 class="title-2"> <a href="product-details-Teddy Rosewood.html">Teddy's Rose Garden</a></h4>
+                                            </div>
+                                            <div class="product-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                          
+                                            <p class="desc-content">Step into a world where nostalgia meets elegance with our  exclusive collection featuring Teddy and Roses Each teddy <br> bear is crafted with the utmost care, embodying timeless charm and cuddly companionship. Paired with our exquisit e roses, sourced for their vibrant colors and delicate  fragrance, our collection brings together the warmth of a  teddy bear's embrace and the beauty of fresh blooms   Perfect  for any occasion, from birthdays to anniversaries  OSAM SHOP  offers a heartfelt gift that symbolizes love  comfort and  enduring joy. Treat yourself or a loved one to the magic  of Teddy and Roses today</p>
+                                         
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6  col-custom product-area">
+                                <div class="product-item">
+                                    <div class="single-product position-relative mr-0 ml-0">
+                                        <div class="product-image">
+                                            <a class="d-block" href="product-details-Rosy Bear.html">
+                                                <img src="assets/images/product/pin_ prettygirlsinspo.jpeg" alt="" class="product-image-1 w-100">
+                                                <img src="assets/images/product/teddy5000.jpeg" alt="" class="product-image-2 position-absolute w-100">
+                                            </a>
+                                         
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="product-title">
+                                                <h4 class="title-2"> <a href="product-details-Rosy Bear.html">Rosy Bear</a></h4>
+                                            </div>
+                                            <div class="product-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <div class="price-box">
+                                             
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="product-content-listview">
+                                            <div class="product-title">
+                                                <h4 class="title-2"> <a href="product-details-Rosy Bear.html">Rosy Bear</a></h4>
+                                            </div>
+                                            <div class="product-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <div class="price-box">
+                                               
+                                            </div>
+                                            <p class="desc-content">Teddy and Rose were inseparable, their bond woven tightly through years of shared adventures and quiet moments alike. Teddy, with his worn fur and stitched smile, was Rose's steadfast confidant, always there to listen with patient, button eyes and offer comfort with his soft, reassuring presence. Rose, in turn, cherished Teddy as more than just a toy; he was her loyal companion through childhood's ups and downs, a silent witness to her dreams and fears. Together, they navigated imaginary worlds and real-life challenges, their friendship growing deeper with each passing day. Teddy knew Rose's secrets, whispered to him in hushed tones under starlit skies, and Rose knew Teddy's silent strength, a source of solace in times of uncertainty. Theirs was a bond that transcended time and space, a testament to the enduring power of love and companionship.</p>
+                                         
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                        </div>
+                        <!-- Shop Wrapper End -->
+                        <!-- Bottom Toolbar Start -->
+                        <div class="row">
+                            <div class="col-sm-12 col-custom">
+                                <div class="toolbar-bottom">
+                                    <div class="pagination">
+                                       
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Bottom Toolbar End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Shop Main Area End Here -->
+        <?php include('footer.php'); ?>
+
+      
+    
+        <!-- Scroll to Top Start -->
+        <a class="scroll-to-top" href="#">
+            <i class="lnr lnr-arrow-up"></i>
+        </a>
+        <!-- Scroll to Top End -->
+
+        <script src="srcipt.js"></script>
+
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <!-- jQuery Migrate JS -->
+    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Swiper Slider JS -->
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <!-- nice select JS -->
+    <script src="assets/js/plugins/nice-select.min.js"></script>
+    <!-- Ajaxchimpt js -->
+    <script src="assets/js/plugins/jquery.ajaxchimp.min.js"></script>
+    <!-- Jquery Ui js -->
+    <script src="assets/js/plugins/jquery-ui.min.js"></script>
+    <!-- Jquery Countdown js -->
+    <script src="assets/js/plugins/jquery.countdown.min.js"></script>
+    <!-- jquery magnific popup js -->
+    <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+
+</html>
