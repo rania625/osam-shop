@@ -27,45 +27,46 @@ $categories = $pdo->query("SELECT * FROM categorie")->fetchAll(PDO::FETCH_ASSOC)
                                 
                                 </li>
                                 <li>
-                                    <a href="shop-fullwidth.html">
-                                        <span class="menu-text">Shop</span>
-                                        <i class="fa fa-angle-down"></i>
-                                    </a>
-                                    <div class="mega-menu dropdown-hover">
-                                        <div class="menu-colum">
-                                            <ul>
-                                                <li><span class="mega-menu-text"> Occasion</span></li>
-                                                <?php foreach ($categories as $category): ?>
-                                                <li><a href="birthday.html"><?= htmlspecialchars($category['libelle'])?></a></li>
-                                                <?php endforeach;?>
-                                                <li><a href="valentine.html">Valentine's Day</a></li>
-                                                <li><a href="wedding.html">Wedding</a></li>
-                                                <li><a href="parties.html">Parties</a></li>
-                                                <li><a href="Motherday.html">Mother's day</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="menu-colum">
-                                            <ul>
-                                                <li><span class="mega-menu-text">Product</span></li>
-                                                <li><a href="roses.html">Roses</a></li>
-                                                <li><a href="roseschocolate.html">Roses and chocolate</a></li>
-                                                <li><a href="teddy.html">Roses and teddy</a></li>
-                                                             
-                                            </ul>
-                                        </div>
-                                        <div class="menu-colum">
-                                            <ul>
-                                                <li><span class="mega-menu-text">Services</span></li>
-                                                <li><a href="Prestige-Gift.html">Prestige Gift</a></li>
-                                                <li><a href="flowerdecoration.html">Flower decoration</a></li>
-                                                <li><a href="Car-decoration.html">Car decoration </a></li>
-                                                <li><a href="Birthday-bouquet.html">Birthday bouquet</a></li>
-                                                <li><a href="BO.html">Bouquet of roses for the bride</a></li>
-                                            </ul> 
-                                        </div>
-                                    </div>
-                                </li>
-                           
+    <a href="shop-fullwidth.html">
+        <span class="menu-text">Shop</span>
+        <i class="fa fa-angle-down"></i>
+    </a>
+    <div class="mega-menu dropdown-hover">
+        <!-- Occasion Column -->
+        <div class="menu-colum">
+            <ul>
+                <li><span class="mega-menu-text">Occasion</span></li>
+                <?php
+                $occasions = $pdo->query("SELECT * FROM categorie WHERE type = 'occasion'")->fetchAll(PDO::FETCH_ASSOC);
+                foreach ($occasions as $occasion): ?>
+                    <li><a href="<?= htmlspecialchars($occasion['link']) ?>"><?= htmlspecialchars($occasion['libelle']) ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+        <!-- Product Column -->
+        <div class="menu-colum">
+            <ul>
+                <li><span class="mega-menu-text">Product</span></li>
+                <?php
+                $products = $pdo->query("SELECT * FROM categorie WHERE type = 'product'")->fetchAll(PDO::FETCH_ASSOC);
+                foreach ($products as $product): ?>
+                    <li><a href="<?= htmlspecialchars($product['link']) ?>"><?= htmlspecialchars($product['libelle']) ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+        <!-- Services Column -->
+        <div class="menu-colum">
+            <ul>
+                <li><span class="mega-menu-text">Services</span></li>
+                <?php
+                $services = $pdo->query("SELECT * FROM categorie WHERE type = 'service'")->fetchAll(PDO::FETCH_ASSOC);
+                foreach ($services as $service): ?>
+                    <li><a href="<?= htmlspecialchars($service['link']) ?>"><?= htmlspecialchars($service['libelle']) ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </div>
+</li>
                          
                                 <li>
                                     <a href="about-us.html">
@@ -129,41 +130,40 @@ $categories = $pdo->query("SELECT * FROM categorie")->fetchAll(PDO::FETCH_ASSOC)
                                       
                                     </ul>
                                 </li>
-                                <li class="menu-item-has-children"><a href="shop-fullwidth.html">Shop</a>
-                                    <ul class="megamenu dropdown">
-                                       
-                                                <ul>
-                                                    <li><span class="mega-menu-text"> Occasion</span></li>
-                                                    <li><a href="birthday.html">Birthday</a></li>
-                                                    <li><a href="valentine.html">Valentine's Day</a></li>
-                                                    <li><a href="wedding.html">Wedding</a></li>
-                                                    <li><a href="parties.html">Parties</a></li>
-                                                    <li><a href="Motherday.html">Mother's day</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="menu-colum">
-                                                <ul>
-                                                    <li><span class="mega-menu-text">Product</span></li>
-                                                    <li><a href="roses.html">Roses</a></li>
-                                                    <li><a href="roseschocolate.html">Roses and chocolate</a></li>
-                                                    <li><a href="teddy.html">Roses and teddy</a></li>
-                                               
-                                                </ul>
-                                            </div>
-                                            <div class="menu-colum">
-                                                <ul>
-                                                    <li><span class="mega-menu-text">Services</span></li>
-                                                    <li><a href="Prestige-Gift.html">Prestige Gift</a></li>
-                                                    <li><a href="flowerdecoration.html">Flower decoration</a></li>
-                                                    <li><a href="Car-decoration.html">Car decoration </a></li>
-                                                    <li><a href="Birthday-bouquet.html">Birthday bouquet</a></li>
-                                                    <li><a href="BO.html">Bouquet of roses for the bride</a></li>
-                                                </ul>     
-                                      
-                                        </li>
-                                    </ul>
-                                </li>
-                             
+    <li class="menu-item-has-children"><a href="shop-fullwidth.html">Shop</a>
+    <ul class="megamenu dropdown">
+        <div class="menu-colum">
+            <ul>
+                <li><span class="mega-menu-text"> Occasion</span></li>
+                <?php
+                $occasions = $pdo->query("SELECT * FROM categorie WHERE type = 'occasion'")->fetchAll(PDO::FETCH_ASSOC);
+                foreach ($occasions as $occasion): ?>
+                    <li><a href="<?= htmlspecialchars($occasion['link']) ?>"><?= htmlspecialchars($occasion['libelle']) ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+        <div class="menu-colum">
+            <ul>
+                <li><span class="mega-menu-text"> Product</span></li>
+                <?php
+                $products = $pdo->query("SELECT * FROM categorie WHERE type = 'product'")->fetchAll(PDO::FETCH_ASSOC);
+                foreach ($products as $product): ?>
+                    <li><a href="<?= htmlspecialchars($product['link']) ?>"><?= htmlspecialchars($product['libelle']) ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+        <div class="menu-colum">
+            <ul>
+                <li><span class="mega-menu-text"> Services</span></li>
+                <?php
+                $services = $pdo->query("SELECT * FROM categorie WHERE type = 'service'")->fetchAll(PDO::FETCH_ASSOC);
+                foreach ($services as $service): ?>
+                    <li><a href="<?= htmlspecialchars($service['link']) ?>"><?= htmlspecialchars($service['libelle']) ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </ul>
+</li>
                            
                                 <li><a href="about-us.html">About Us</a></li>
                                 <li><a href="contact-us.html">Contact</a></li>

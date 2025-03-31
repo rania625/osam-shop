@@ -11,11 +11,12 @@ if (isset($_GET['id'])) {
 
 if (isset($_POST['modifier'])) {
     $libelle = $_POST['libelle'];
-    $description = $_POST['description'];
+    $description = $_POST['link'];
+    $description = $_POST['type'];
 
-    $sql = 'UPDATE categorie SET libelle = ?, description = ? WHERE id = ?';
+    $sql = 'UPDATE categorie SET libelle = ?, link = ?, type = ? WHERE id = ?';
     $stmt = $pdo->prepare($sql);
-    $stmt->execute([$libelle, $description, $id]);
+    $stmt->execute([$libelle, $link, $type, $id]);
     header('Location: categories.php'); // Rediriger vers la liste
 }
 ?>
@@ -108,8 +109,12 @@ if (isset($_POST['modifier'])) {
                 <input type="text" class="form-control" name="libelle" value="<?php echo htmlspecialchars($categorie['libelle']); ?>" required>
             </div>
             <div class="mb-3">
-                <label for="description" class="form-label">Description</label>
-                <textarea class="form-control" name="description" required><?php echo htmlspecialchars($categorie['description']); ?></textarea>
+                <label for="description" class="form-label">link</label>
+                <textarea class="form-control" name="link" required><?php echo htmlspecialchars($categorie['link']); ?></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">type</label>
+                <textarea class="form-control" name="type" required><?php echo htmlspecialchars($categorie['type']); ?></textarea>
             </div>
             <button type="submit" name="modifier" class="btn btn-primary">Modifier</button>
         </form>
