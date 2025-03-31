@@ -15,10 +15,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Commit and push changes
+      - name: Configure Git
         run: |
           git config --global user.name "rania625"
           git config --global user.email "mikasanono923@gmail.com"
+
+      - name: Commit and push changes
+        run: |
           git add .
-          git commit -m "Automated commit"
+          git commit -m "Automated commit" || echo "No changes to commit"
           git push
