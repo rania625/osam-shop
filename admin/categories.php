@@ -240,8 +240,9 @@ $categories = $pdo->query('SELECT * FROM categorie ORDER BY date_creation DESC')
                     <tr>
                         <th>ID</th>
                         <th>Libellé</th>
-                        <th>Description</th>
-                        <th>Date de Création</th>
+                        <th>link</th>
+                        <th>type</th>
+                        <th>date creation</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -254,7 +255,8 @@ $categories = $pdo->query('SELECT * FROM categorie ORDER BY date_creation DESC')
                             <tr>
                                 <td><?= $categorie['id'] ?></td>
                                 <td><?= htmlspecialchars($categorie['libelle']) ?></td>
-                                <td class="description-cell"><?= htmlspecialchars($categorie['description']) ?></td>
+                                <td class="description-cell"><?= htmlspecialchars($categorie['link']) ?></td>
+                                <td class="description-cell"><?= htmlspecialchars($categorie['type']) ?></td>
                                 <td><?= date('d/m/Y H:i', strtotime($categorie['date_creation'])) ?></td>
                                 <td>
                                     <div class="action-buttons">

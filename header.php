@@ -20,7 +20,7 @@ $categories = $pdo->query("SELECT * FROM categorie")->fetchAll(PDO::FETCH_ASSOC)
                         <nav class="main-nav mr-5 d-none d-lg-flex">
                             <ul class="nav">
                                 <li>
-                                    <a class="active" href="anglais.html">
+                                    <a class="active" href="index.php">
                                         <span> Home</span>
                                        
                                     </a>
@@ -35,7 +35,9 @@ $categories = $pdo->query("SELECT * FROM categorie")->fetchAll(PDO::FETCH_ASSOC)
                                         <div class="menu-colum">
                                             <ul>
                                                 <li><span class="mega-menu-text"> Occasion</span></li>
-                                                <li><a href="birthday.html">Birthday</a></li>
+                                                <?php foreach ($categories as $category): ?>
+                                                <li><a href="birthday.html"><?= htmlspecialchars($category['libelle'])?></a></li>
+                                                <?php endforeach;?>
                                                 <li><a href="valentine.html">Valentine's Day</a></li>
                                                 <li><a href="wedding.html">Wedding</a></li>
                                                 <li><a href="parties.html">Parties</a></li>
@@ -48,7 +50,7 @@ $categories = $pdo->query("SELECT * FROM categorie")->fetchAll(PDO::FETCH_ASSOC)
                                                 <li><a href="roses.html">Roses</a></li>
                                                 <li><a href="roseschocolate.html">Roses and chocolate</a></li>
                                                 <li><a href="teddy.html">Roses and teddy</a></li>
-                                           
+                                                             
                                             </ul>
                                         </div>
                                         <div class="menu-colum">
@@ -123,7 +125,7 @@ $categories = $pdo->query("SELECT * FROM categorie")->fetchAll(PDO::FETCH_ASSOC)
                             <ul class="mobile-menu">
                                 
                                     <ul >
-                                        <li><a href="anglais.html">Home</a></li>
+                                        <li><a href="index.php">Home</a></li>
                                       
                                     </ul>
                                 </li>
@@ -165,6 +167,11 @@ $categories = $pdo->query("SELECT * FROM categorie")->fetchAll(PDO::FETCH_ASSOC)
                            
                                 <li><a href="about-us.html">About Us</a></li>
                                 <li><a href="contact-us.html">Contact</a></li>
+                                <li>
+                                    <a href="admin/inedix.php">
+                                        <span class="menu-text"> login</span>
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
                         <!-- mobile menu navigation end -->

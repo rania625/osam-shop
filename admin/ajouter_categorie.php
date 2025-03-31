@@ -172,12 +172,13 @@
         <?php
         if (isset($_POST['ajouter'])) {
             $libelle = htmlspecialchars($_POST['libelle']);
-            $description = htmlspecialchars($_POST['description']);
+            $link = htmlspecialchars($_POST['link']);
+            $type = htmlspecialchars($_POST['type']);
 
-            if (!empty($libelle) && !empty($description)) {
+            if (!empty($libelle) && !empty($link) && !empty($type)) {
                 require_once 'include/database.php';
-                $sqlstate = $pdo->prepare('INSERT INTO categorie(libelle, description) VALUES (?, ?)');
-                $sqlstate->execute([$libelle, $description]);
+                $sqlstate = $pdo->prepare('INSERT INTO categorie(libelle, link, type) VALUES (?, ?, ?)');
+                $sqlstate->execute([$libelle, $link, $type]);
                 echo '<div class="alert alert-success">
                         <i class="fas fa-check-circle me-2"></i>
                         La catégorie ' . htmlspecialchars($libelle) . ' a bien été ajoutée.
@@ -193,15 +194,20 @@
 
         <form method="POST" class="needs-validation" novalidate>
             <div class="form-group">
-                <label class="form-label">Libelle *</label>
+                <label class="form-label">Libelle </label>
                 <i class="fas fa-tag"></i>
                 <input type="text" class="form-control" name="libelle" placeholder="Entrez le libellé" required>
             </div>
 
             <div class="form-group">
-                <label class="form-label">Description *</label>
+                <label class="form-label">link </label>
                 <i class="fas fa-align-left"></i>
-                <textarea class="form-control" name="description" placeholder="Entrez la description" required></textarea>
+                <textarea class="form-control" name="link" placeholder="Entrez la link" required></textarea>
+            </div>
+            <div class="form-group">
+                <label class="form-label">type</label>
+                <i class="fas fa-align-left"></i>
+                <textarea class="form-control" name="type" placeholder="Entrez type" required></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary" name="ajouter">
