@@ -107,13 +107,9 @@ body {
 
 .theme-toggle {
     position: fixed;
-    top: 10px;
-    right: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
+    top: 60px;  /* Ajuste selon ta préférence */
+    right: 20px; /* Positionne le bouton à gauche */
+    z-index: 1000; /* Pour que le bouton soit au-dessus des autres éléments */
 }
 
 .theme-toggle i {

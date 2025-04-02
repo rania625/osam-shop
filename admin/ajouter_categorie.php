@@ -123,10 +123,12 @@
             z-index: 1000;
         }
 
-        .theme-toggle i {
-            color: var(--primary);
-            font-size: 1.2rem;
-        }
+        .theme-toggle {
+    position: fixed;
+    top: 60px;  /* Ajuste selon ta préférence */
+    right: 20px; /* Positionne le bouton à gauche */
+    z-index: 1000; /* Pour que le bouton soit au-dessus des autres éléments */
+}
 
         h4 {
             color: var(--primary);

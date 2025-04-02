@@ -79,21 +79,11 @@ if (isset($_POST['modifier'])) {
         }
 
         .theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.8);
-            border: 2px solid var(--primary);
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-        }
+    position: fixed;
+    top: 60px;  /* Ajuste selon ta préférence */
+    right: 20px; /* Positionne le bouton à gauche */
+    z-index: 1000; /* Pour que le bouton soit au-dessus des autres éléments */
+}
     </style>
 </head>
 <body>

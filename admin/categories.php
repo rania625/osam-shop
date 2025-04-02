@@ -182,9 +182,12 @@ $categories = $pdo->query('SELECT * FROM categorie ORDER BY date_creation DESC')
             z-index: 1000;
         }
 
-        .theme-toggle i {
-            color: var(--primary);
-        }
+        .theme-toggle {
+    position: fixed;
+    top: 60px;  /* Ajuste selon ta préférence */
+    right: 20px; /* Positionne le bouton à gauche */
+    z-index: 1000; /* Pour que le bouton soit au-dessus des autres éléments */
+}
 
         .empty-message {
             text-align: center;

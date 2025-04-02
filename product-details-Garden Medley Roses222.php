@@ -67,17 +67,17 @@
                         <div class="single-product-img swiper-container gallery-top popup-gallery">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <a class="w-100" href="assets/images/product/IMG-20240502-WA0032 - Copie (3).jpg">
-                                        <img class="w-100" src="assets/images/product/IMG-20240502-WA0032 - Copie (3).jpg" alt="Product">
+                                    <a class="w-100" href="admin/uploads/IMG-20240502-WA0032 - Copie (3) (2).jpg">
+                                        <img class="w-100" src= "admin/uploads/IMG-20240502-WA0032 - Copie (3).jpg" alt="Product">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="w-100" href="assets/images/product/large-size/IMG-20240502-WA0064 - Copie (2).jpg">
-                                        <img class="w-100" src="assets/images/product/large-size/IMG-20240502-WA0064 - Copie (2).jpg" alt="Product">
+                                    <a class="w-100" href="admin/uploads/large-size/IMG-20240502-WA0064 - Copie (2).jpg">
+                                        <img class="w-100" src="admin/large-size/IMG-20240502-WA0064 - Copie (2).jpg" alt="Product">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="w-100" href="assets/images/product/large-size/MIX FLOWER1.jpg">
+                                    <a class="w-100" href="a/images/product/large-size/MIX FLOWER1.jpg">
                                         <img class="w-100" src="assets/images/product/MIX FLOWER 1.jpg" alt="Product">
                                     </a>
                                 </div>

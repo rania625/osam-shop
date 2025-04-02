@@ -138,7 +138,7 @@
 
         .theme-toggle {
             position: fixed;
-            top: 20px;
+            top: 60px;
             right: 20px;
             background: var(--card-bg);
             border: none;
